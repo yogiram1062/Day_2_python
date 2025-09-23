@@ -1,0 +1,70 @@
+Veena wants to learn shape calculation for Square,Rectangle,Circle,Triangle to implements in programming.Could you please help her to how to write the program. - Square formula:a*a - Rectangle formula:l*b - Circle formula:πr^2 - Triangle formula:1/2*(b*h)
+
+Input Format
+
+First input consist of integer for side.
+Second and third input consists of integer for Length and breadth.
+forth input consist of radius.
+Fifth and Sixth input consist of Base and height.
+Constraints
+
+No Constraints
+
+Output Format
+
+Execute the area of shape calculation values.
+Sample Input 0
+
+2
+3
+2
+3
+6
+5
+Sample Output 0
+
+Area of Square=4
+Area of Rectangle=6
+Area of Circle=28.27
+Area of Triangle=15
+Sample Input 1
+
+2
+3
+4
+5
+6
+7
+Sample Output 1
+
+Area of Square=4
+Area of Rectangle=12
+Area of Circle=78.53
+Area of Triangle=21
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Square
+a = int(input())
+area_square = a * a
+
+# Rectangle
+l = int(input())
+b = int(input())
+area_rectangle = l * b
+
+# Circle
+r = int(input())
+pi = 3.14159
+area_circle = pi * r * r
+area_circle = int(area_circle * 100) / 100   # truncate instead of round
+
+# Triangle
+base = int(input())
+height = int(input())
+area_triangle = (base * height) / 2
+
+# Output
+print("Area of Square=" + str(area_square))
+print("Area of Rectangle=" + str(area_rectangle))
+print("Area of Circle=" + str(area_circle))
+print("Area of Triangle=" + str(int(area_triangle)))
